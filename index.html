@@ -11,7 +11,7 @@
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(120deg, #58f5c1, #9ac22e);
+            background: linear-gradient(120deg, #30d3b8, #cf28e6);
             color: #333;
             overflow-x: hidden;
         }
@@ -22,12 +22,20 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: radial-gradient(circle, rgb(189, 54, 223) 0%, rgb(46, 211, 73) 100%);
-            animation: backgroundFade 10s infinite alternate;
+            background: radial-gradient(circle, rgb(216, 59, 195) 0%, rgb(230, 119, 46) 100%);
+            position: relative;
+            overflow: hidden;
         }
-        @keyframes backgroundFade {
-            0% { background: #774fe4; }
-            100% { background: #cc3910; }
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/150/FF6F61?text=❤'); /* Replace with a real heart pattern */
+            background-size: 50px 50px;
+            background-repeat: repeat;
+            opacity: 0.2;
+            z-index: 0;
         }
         .hero h1 {
             font-size: 3rem;
@@ -38,12 +46,16 @@
             background: linear-gradient(90deg, #ff6f61, #ff9a9e, #fad0c4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            z-index: 1;
+            position: relative;
         }
         .hero p {
             font-size: 1.5rem;
             margin: 10px 0;
             color: #fff;
             opacity: 0.9;
+            z-index: 1;
+            position: relative;
         }
         .btn {
             margin-top: 20px;
@@ -56,6 +68,8 @@
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, background-color 0.3s ease;
+            z-index: 1;
+            position: relative;
         }
         .btn:hover {
             transform: scale(1.1);
