@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Bhumika</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #58f5c1, #9ac22e);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, rgb(189, 54, 223) 0%, rgb(46, 211, 73) 100%);
+            animation: backgroundFade 10s infinite alternate;
+        }
+        @keyframes backgroundFade {
+            0% { background: #774fe4; }
+            100% { background: #cc3910; }
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(90deg, #ff6f61, #ff9a9e, #fad0c4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #fff;
+            opacity: 0.9;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 1rem;
+            background: linear-gradient(120deg, #ff6f61, #ff9a9e);
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(120deg, #fad0c4, #ffe0de);
+        }
+        .about {
+            padding: 50px;
+            text-align: center;
+            background: #fff;
+            color: #333;
+            position: relative;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            animation: slideIn 1.5s ease;
+            background: linear-gradient(120deg, #ff6f61, #fad0c4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-family: 'Dancing Script', cursive;
+        }
+        .about span {
+            color: #ff6f61;
+            font-weight: bold;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 30px;
+            background: linear-gradient(120deg, #ffe0de, #fef6e4);
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+        }
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .floating-heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #ff6f61;
+            animation: floatUp 4s infinite ease-in-out;
+            clip-path: polygon(50% 0%, 100% 38%, 79% 100%, 50% 79%, 21% 100%, 0% 38%);
+        }
+        .floating-heart:nth-child(2) {
+            left: 20%;
+            animation-delay: 1s;
+            background: #ff9a9e;
+        }
+        .floating-heart:nth-child(3) {
+            left: 70%;
+            animation-delay: 2s;
+            background: #fad0c4;
+        }
+        @keyframes floatUp {
+            0% {
+                bottom: 0;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <h1>For Bhumika, the One and Only</h1>
+      <p>This website is a little piece of my heart, just for you.</p>
+      <button class="btn" onclick="alert('Bhumika, you light up my world! 🌟')">Explore
+        More</button>
+    </section>
+
+    <section class="about">
+      <div class="floating-heart" style="left: 40%;"></div>
+      <div class="floating-heart"></div>
+      <div class="floating-heart"></div>
+      <h2>Dear Bhumika, You Are Truly Special</h2>
+      <p>Your smile is like sunshine, bringing warmth and light to everyone around you.</p>
+      <p>Every moment with you feels like magic. <span>Never stop being you!</span></p>
+    </section>
+
+    <section class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="A cherished memory">
+      <img src="https://via.placeholder.com/300x200" alt="Moments of joy">
+      <img src="https://via.placeholder.com/300x200" alt="Captured happiness">
+    </section>
+
+    <footer class="footer">
+      <p>Crafted with endless ❤️ by someone who thinks you're amazing, Bhumika. <a href="#">Connect
+          with me</a></p>
+    </footer>
+  </body>
+</html>
