@@ -247,6 +247,11 @@
       <p class="p1">Drag the papers to move!</p>
     </div>
 
-    <script src="./script.js"></script>
+    <script>
+      const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+      const script = document.createElement('script');
+      script.src = isMobile ? 'mobile.js' : 'desktop.js';
+      document.body.appendChild(script);
+    </script>
   </body>
 </html>
